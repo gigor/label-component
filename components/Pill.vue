@@ -81,6 +81,9 @@ const props = defineProps({
 		&.insignificant {
 			background-color: var(--trend-area-insignificant);
 		}
+	}
+
+	&.highlighted{
 		@media (any-hover: hover) {
 			&.clickable:not(.disabled):hover {
 				background-color: var(--layers-alive-hover);
@@ -95,6 +98,26 @@ const props = defineProps({
 				}
 				&.insignificant {
 					background-color: var(--trend-area-insignificant-hover);
+				}
+			}
+		}
+	}
+
+	&.ghost {
+		@media (any-hover: hover) {
+			&.clickable:not(.disabled):hover {
+				background-color: var(--layers-alive);
+				&.positive {
+					background-color: var(--trend-area-positive);
+				}
+				&.negative {
+					background-color: var(--trend-area-negative);
+				}
+				&.normal {
+					background-color: var(--trend-area-normal);
+				}
+				&.insignificant {
+					background-color: var(--trend-area-insignificant);
 				}
 			}
 		}

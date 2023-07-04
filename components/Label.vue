@@ -47,7 +47,7 @@ const props = defineProps({
 
 	display: inline-flex;
 	gap: 4px;
-	align-items: middle;
+	align-items: center;
 
 	&.trend-insignificant {
 		color: var(--trend-insignificant);

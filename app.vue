@@ -354,71 +354,37 @@ const handle_click = () => {
 			</table>
 		</div>
 
-		<h2 class="highlight-anchor">Playground</h2>
+		<h2 class="highlight-anchor">Trends</h2>
 		<div class="card">
 			<Pill :badge_value="879" trend="positive">
-				<Label>🛠️ Primary</Label>
-				<Label>
-					<Icon />
-					String
-					<template #secondary>Secondary</template>
-				</Label>
+				<Label>Positive</Label>
 			</Pill>
-			<Pill :badge_value="879" trend="negative">
-				<Label>🛠️ Primary</Label>
-				<Label>
-					<Icon />
-					String
-					<template #secondary>Secondary</template>
-				</Label>
+
+			<Pill trend="negative">
+				<Label>Negative</Label>
 			</Pill>
-			<Pill
-				:badge_value="879"
-				trend="positive"
-				type="ghost"
-				:clickable="true"
-			>
-				<Label>🛠️ Primary</Label>
-				<Label>
-					<Icon />
-					String
-					<template #secondary>Secondary</template>
-				</Label>
+
+			<Pill trend="insignificant">
+				<Label>Insignificant</Label>
 			</Pill>
-			<Pill :badge_value="879" trend="insignificant">
-				<Label>🛠️ Normal</Label>
+
+			<Pill trend="normal">
+				<Label>Normal</Label>
 			</Pill>
-			<Pill :badge_value="879" trend="normal">
-				<Label>🛠️ Primary</Label>
-			</Pill>
-			<Pill :badge_value="879" trend="positive">
-				<Label>🛠️ Primary</Label>
-			</Pill>
-			<!-- Does not emit click because not clickable -->
-			<Pill :badge_value="879" trend="negative" @clicked="handle_click">
-				<Label>🛠️ Primary</Label>
-			</Pill>
-			<Pill trend="negative" :clickable="true" @clicked="handle_click">
-				<Label>🛠️ Primary</Label>
-			</Pill>
-			<!-- Does not emit click because not clickable and disabled -->
-			<Pill trend="positive" :disabled="true" @clicked="handle_click">
-				<Label>🛠️ Primary</Label>
-			</Pill>
-			<!-- Does not emit click because disabled -->
-			<Pill
-				trend="positive"
-				:clickable="true"
-				:disabled="true"
-				@clicked="handle_click"
-			>
-				<Label>🛠️ Primary</Label>
+
+			<Pill type="ghost">
+				<Label>Ghost</Label>
 			</Pill>
 		</div>
 
 		<h2 class="highlight-anchor">Sizes</h2>
 		<div class="card">
-			<!-- return ['default', 'page', 'section', 'micro', 'identity'].includes( -->
+			<Pill :badge_value="879" trend="positive">
+				<Label size="micro"
+					>🛠️ Micro
+					<template #secondary>Secondary</template>
+				</Label>
+			</Pill>
 
 			<Pill :badge_value="879" trend="positive">
 				<Label
@@ -428,8 +394,8 @@ const handle_click = () => {
 			</Pill>
 
 			<Pill :badge_value="879" trend="positive">
-				<Label size="page"
-					>🛠️ Page
+				<Label size="identity"
+					>🛠️ Identity
 					<template #secondary>Secondary</template>
 				</Label>
 			</Pill>
@@ -442,20 +408,226 @@ const handle_click = () => {
 			</Pill>
 
 			<Pill :badge_value="879" trend="positive">
-				<Label size="micro"
-					>🛠️ Micro
-					<template #secondary>Secondary</template>
-				</Label>
-			</Pill>
-
-			<Pill :badge_value="879" trend="positive">
-				<Label size="identity"
-					>🛠️ Identity
+				<Label size="page"
+					>🛠️ Page
 					<template #secondary>Secondary</template>
 				</Label>
 			</Pill>
 		</div>
 	</div>
+
+	<h2 class="highlight-anchor">Icons & Multilabel</h2>
+	<div class="card">
+		<Pill :badge_value="879" trend="positive" type="ghost">
+			<Label>🛠️ Primary</Label>
+			<Label>
+				<Icon />
+				String
+				<template #secondary>Secondary</template>
+			</Label>
+		</Pill>
+
+		<Pill :badge_value="879" trend="positive">
+			<Label>🛠️ Primary</Label>
+			<Label>
+				<Icon />
+				String
+				<template #secondary>Secondary</template>
+			</Label>
+			<Label>
+				String 2
+				<template #secondary>Secondary 2 </template>
+			</Label>
+			<Label>
+				String 3
+				<template #secondary>Secondary 3</template>
+			</Label>
+		</Pill>
+	</div>
+
+	<h2 class="highlight-anchor">Clickable</h2>
+	<div class="card">
+			<Pill
+				trend="positive"
+				type="ghost"
+				:clickable="true"
+				@clicked="handle_click"
+			>
+				<Label>Ghost positive</Label>
+			</Pill>
+
+			<Pill
+				trend="negative"
+				type="ghost"
+				:clickable="true"
+			>
+				<Label>Ghost negative</Label>
+			</Pill>
+
+			<Pill
+				trend="insignificant"
+				type="ghost"
+				:clickable="true"
+				@clicked="handle_click"
+			>
+				<Label>Ghost insignificant</Label>
+			</Pill>
+
+			<Pill
+				trend="normal"
+				type="ghost"
+				:clickable="true"
+				@clicked="handle_click"
+			>
+				<Label>Ghost normal</Label>
+			</Pill>
+
+			<Pill
+				type="ghost"
+				:clickable="true"
+				@clicked="handle_click"
+			>
+				<Label>Ghost</Label>
+			</Pill>
+
+			<Pill
+				trend="positive"
+				:clickable="true"
+				@clicked="handle_click"
+			>
+				<Label>Positive</Label>
+			</Pill>
+
+			<Pill
+				trend="negative"
+				:clickable="true"
+				@clicked="handle_click"
+			>
+				<Label>Negative</Label>
+			</Pill>
+
+			<Pill
+				trend="insignificant"
+				:clickable="true"
+				@clicked="handle_click"
+			>
+				<Label>Insignificant</Label>
+			</Pill>
+
+			<Pill
+				trend="normal"
+				:clickable="true"
+				@clicked="handle_click"
+			>
+				<Label>Normal</Label>
+			</Pill>
+
+			<Pill
+				:clickable="true"
+				@clicked="handle_click"
+			>
+				<Label>No trend</Label>
+			</Pill>
+	</div>
+
+	<h2 class="highlight-anchor">Disabled</h2>
+	<div class="card">
+		<Pill
+				trend="positive"
+				type="ghost"
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>Ghost positive</Label>
+			</Pill>
+
+			<Pill
+				trend="negative"
+				type="ghost"
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>Ghost negative</Label>
+			</Pill>
+
+			<Pill
+				trend="insignificant"
+				type="ghost"
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>Ghost insignificant</Label>
+			</Pill>
+
+			<Pill
+				trend="normal"
+				type="ghost"
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>Ghost normal</Label>
+			</Pill>
+
+			<Pill
+				type="ghost"
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>Ghost</Label>
+			</Pill>
+
+			<Pill
+				trend="positive"
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>Positive</Label>
+			</Pill>
+
+			<Pill
+				trend="negative"
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>Negative</Label>
+			</Pill>
+
+			<Pill
+				trend="insignificant"
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>Insignificant</Label>
+			</Pill>
+
+			<Pill
+				trend="normal"
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>Normal</Label>
+			</Pill>
+
+			<Pill
+				:clickable="true"
+				@clicked="handle_click"
+				:disabled="true"
+			>
+				<Label>No trend</Label>
+			</Pill>
+	</div>	
+
+
+
 </template>
 
 <style scoped lang="postcss">
