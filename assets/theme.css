@@ -1,0 +1,342 @@
+:root {
+	--white: #ffffff !important;
+	--dark: #313438 !important;
+	--gray-lightest: #f3f3f3;
+	--gray-lighter: #eaeaea;
+	--gray-light: #d0d0d0;
+	--gray: #7d858f !important;
+	--gray-dark: var(--symbols-primary) !important;
+	--gray-darker: #525458;
+	--gray-darkest: #404347;
+	--green-lighter: #f2f8f1;
+	--green-light: #e5f1e2;
+	--green: #7fb871 !important;
+	--green-dark: #72a566;
+	--green-darker: #66935a;
+	--yellow-lighter: #fcf8f1;
+	--yellow-light: #f8f1e3;
+	--yellow: #ddba75 !important;
+	--yellow-dark: #c7a769;
+	--yellow-darker: #b1955e;
+	--orange-lighter: #fbf5f1;
+	--orange-light: #f7ebe2;
+	--orange: #d69a6f !important;
+	--orange-dark: #c08b64;
+	--orange-darker: #ab7b59;
+	--red-lighter: #f9f1ef;
+	--red-light: #f3e2df;
+	--red: #c2705e !important;
+	--red-dark: #c08b64;
+	--red-darker: #af6555;
+	--teal-lighter: #f1f7f6;
+	--teal-light: #e3f0ee;
+	--teal: #72b4a9 !important;
+	--teal-dark: #67a298;
+	--teal-darker: #5b9087;
+	--purple-lighter: #f2f1f8;
+	--purple-light: #e5e3f0;
+	--purple: #7c72b5 !important;
+	--purple-dark: #7067a3;
+	--purple-darker: #635b91;
+	--blue-lighter: #f0f4f8;
+	--blue-light: #e2e8f1;
+	--blue: #6d8ebb !important;
+	--blue-dark: #6280a8;
+	--blue-darker: #577296;
+	--symbols-primary: #171717;
+	--symbols-secondary: rgba(23, 23, 23, 0.5);
+	--layers-primary: rgba(255, 255, 255, 1);
+	--layers-secondary: rgba(245, 245, 245, 1);
+	--layers-anchor: rgba(23, 23, 23, 1);
+
+	--layers-alive: rgba(23, 23, 23, 0.06);
+	--layers-alive-hover: rgba(23, 23, 23, 0.1);
+
+	--trend-positive: rgba(65, 150, 44, 1);
+	--trend-normal: rgba(233, 154, 37, 1);
+	--trend-negative: rgba(220, 67, 33, 1);
+	--trend-insignificant: rgba(23, 23, 23, 0.5);
+
+	--trend-area-positive: rgba(65, 150, 44, 0.1);
+	--trend-area-normal: rgba(233, 154, 37, 0.1);
+	--trend-area-negative: rgba(220, 78, 33, 0.1);
+	--trend-area-insignificant: rgba(23, 23, 23, 0.1);
+
+	/*TODO: replace with more accurate values*/
+	--trend-area-positive-hover: rgba(65, 150, 44, 0.17);
+	--trend-area-normal-hover: rgba(233, 154, 37, 0.17);
+	--trend-area-negative-hover: rgba(220, 78, 33, 0.17);
+	--trend-area-insignificant-hover: rgba(23, 23, 23, 0.17);
+
+	--info-danger: rgba(235, 79, 79, 1);
+	--info-warning: rgba(233, 190, 37, 1);
+	--info-informing: rgba(68, 126, 207, 1);
+	--info-success: rgba(82, 171, 60, 1);
+	--info-area-danger: rgba(235, 79, 79, 0.15);
+	--info-area-warning: rgba(233, 166, 37, 0.15);
+	--info-area-informing: rgba(68, 126, 207, 0.15);
+	--info-area-success: rgba(65, 150, 44, 0.1);
+	--mark-red: rgba(235, 82, 82, 1);
+	--mark-orange: rgba(238, 146, 61, 1);
+	--mark-yellow: rgba(233, 190, 37, 1);
+	--mark-green: rgba(82, 171, 60, 1);
+	--mark-blue: rgba(114, 174, 219, 1);
+	--mark-purple: rgba(190, 86, 207, 1);
+	--mark-gray: rgba(137, 145, 156, 1);
+	--mark-black: rgba(23, 23, 23, 1);
+	--mark-night: rgba(116, 94, 202, 1);
+	--mark-pink: rgba(232, 122, 221, 1);
+	--mark-brown: rgba(183, 123, 69, 1);
+	--mark-acid: rgba(129, 217, 60, 1);
+	--mark-area-red: rgba(235, 82, 82, 0.2);
+	--mark-area-orange: rgba(238, 146, 61, 0.2);
+	--mark-area-yellow: rgba(233, 190, 37, 0.2);
+	--mark-area-green: rgba(82, 171, 60, 0.2);
+	--mark-area-blue: rgba(114, 174, 219, 0.2);
+	--mark-area-purple: rgba(190, 86, 207, 0.2);
+	--mark-area-gray: rgba(137, 145, 156, 0.2);
+	--mark-area-black: rgba(23, 23, 23, 0.2);
+	--mark-area-night: rgba(116, 94, 202, 0.2);
+	--mark-area-pink: rgba(232, 122, 221, 0.2);
+	--mark-area-brown: rgba(183, 123, 69, 0.2);
+	--mark-area-acid: rgba(129, 217, 60, 0.2);
+}
+.inverted {
+   --symbols-primary: #FFF;
+   --symbols-secondary: rgba(240, 240, 240, 0.60);
+   --symbols-disabled: rgba(240, 240, 240, 0.10);
+   --layers-primary: #000;
+   --layers-secondary: rgba(240, 240, 240, 0.10);
+   --layers-anchor: #F0F0F0;
+   --layers-alive: rgba(240, 240, 240, 0.10);
+   --layers-hover: rgba(240, 240, 240, 0.20);
+   --layers-default: rgba(0, 0, 0, 0.00);
+
+   --trend-area-positive: var(--trand-positive);
+   --trend-area-normal:  var(--trand-normal);
+   --trend-area-negative:  var(--trand-negative);
+   --trend-area-insignificant:  var(--trand-insignificant);
+}
+:root.facelift p {
+	color: var(--symbols-primary);
+}
+.text-heading-1,
+.text-heading-2,
+.text-heading-3,
+.text-heading-4,
+.text-heading-5 {
+	font-style: normal;
+	font-weight: 800;
+	line-height: 130%;
+	color: var(--gray-dark);
+}
+.text-heading-1 {
+	font-size: 24px;
+	letter-spacing: -0.02em;
+}
+.text-heading-2 {
+	font-size: 20px;
+	letter-spacing: -0.02em;
+}
+.text-heading-3 {
+	font-size: 18px;
+	letter-spacing: -0.03em;
+}
+.text-heading-4 {
+	font-size: 16px;
+}
+.text-heading-5 {
+	font-size: 14px;
+}
+.text-body-18,
+.text-body-16,
+.text-body-14,
+.text-body-12 {
+	font-style: normal;
+	font-weight: 500;
+	color: var(--gray-dark);
+}
+.text-body-18 {
+	font-size: 18px;
+	line-height: 130%;
+}
+.text-body-18.same-line-height {
+	line-height: 18px;
+}
+.text-body-16 {
+	font-size: 16px;
+	line-height: 130%;
+}
+.text-body-16.same-line-height {
+	line-height: 16px;
+}
+.text-body-14 {
+	font-size: 14px;
+	line-height: 140%;
+}
+.text-body-14.same-line-height {
+	line-height: 14px;
+}
+.text-body-12 {
+	font-size: 12px;
+	line-height: 140%;
+}
+.text-body-12.same-line-height {
+	line-height: 12px;
+}
+.text-label-12,
+.text-label-10 {
+	font-style: normal;
+	font-weight: 500;
+	line-height: 12px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--gray-dark);
+}
+.text-label-12 {
+	font-size: 12px;
+}
+.text-label-10 {
+	font-size: 10px;
+}
+.page-anchor {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.02em;
+	padding: 8px;
+	margin: 0;
+}
+.page-primary {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	padding: 8px;
+	margin: 0;
+}
+.section-anchor {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 8px;
+	margin: 0;
+}
+.section-primary {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 8px;
+	margin: 0;
+}
+.identity-anchor {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 8px;
+	margin: 0;
+}
+.identity-primary {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 8px;
+	margin: 0;
+}
+.default-key {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: -0.01em;
+	padding: 8px;
+	margin: 0;
+}
+.default-anchor {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 8px;
+	margin: 0;
+}
+.default-primary {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 8px;
+	margin: 0;
+}
+.default-text {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 8px;
+	margin: 0;
+}
+
+/* It's just easier tp have it uniformed */
+.micro-anchor,
+.micro-primary {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 10px;
+   line-height: 12px;
+   padding: 8px;
+   margin: 0;
+}
+
+.highlight-anchor {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 33px;
+	letter-spacing: -0.02em;
+	padding: 8px;
+	margin: 0 0 4px;
+}
+.loading-block {
+	color: rgba(0, 0, 0, 0);
+	background: var(--layers-alive);
+	margin: 8px;
+}
+.loading-block.pill {
+	margin: 8px 4px;
+}
+.loading-block.--small-height {
+	height: 8px;
+}
+.loading-block.--medium-height {
+	height: 15px;
+}
+.loading-block.--large-height {
+	height: 24px;
+}
+.loading-block.--xlarge-height {
+	height: 32px;
+}
+.loading-block.--xxlarge-height {
+	height: 48px;
+}
+.loading-block.--small-width {
+	width: 8px;
+}
+.loading-block.--medium-width {
+	width: 15px;
+}
+.loading-block.--large-width {
+	width: 52px;
+}
+.loading-block.--xlarge-width {
+	width: 106px;
+}
+.loading-block.--xxlarge-width {
+	width: 248px;
+}
