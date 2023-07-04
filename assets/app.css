@@ -1,36 +1,35 @@
 @import 'reset.css';
 @import 'theme.css';
 
-
 body {
-    background: #fcfcfc !important;
-    font-family: Inter, sans-serif !important;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 36px 0;
+	background: #fcfcfc !important;
+	font-family: Inter, sans-serif !important;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 36px 0;
 }
 
 /* Styles bellow only Used to style table */
 
 .w-full {
-    width: 100%;
+	width: 100%;
 }
 
 .text-right {
-    text-align: right;
+	text-align: right;
 }
 
 .nowrap {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 
 .px-8 {
-    padding-left: 8px;
-    padding-right: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
 }

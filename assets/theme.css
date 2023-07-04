@@ -102,20 +102,20 @@
 	--mark-area-acid: rgba(129, 217, 60, 0.2);
 }
 .inverted {
-   --symbols-primary: #FFF;
-   --symbols-secondary: rgba(240, 240, 240, 0.60);
-   --symbols-disabled: rgba(240, 240, 240, 0.10);
-   --layers-primary: #000;
-   --layers-secondary: rgba(240, 240, 240, 0.10);
-   --layers-anchor: #F0F0F0;
-   --layers-alive: rgba(240, 240, 240, 0.10);
-   --layers-hover: rgba(240, 240, 240, 0.20);
-   --layers-default: rgba(0, 0, 0, 0.00);
+	--symbols-primary: #fff;
+	--symbols-secondary: rgba(240, 240, 240, 0.6);
+	--symbols-disabled: rgba(240, 240, 240, 0.1);
+	--layers-primary: #000;
+	--layers-secondary: rgba(240, 240, 240, 0.1);
+	--layers-anchor: #f0f0f0;
+	--layers-alive: rgba(240, 240, 240, 0.1);
+	--layers-hover: rgba(240, 240, 240, 0.2);
+	--layers-default: rgba(0, 0, 0, 0);
 
-   --trend-area-positive: var(--trand-positive);
-   --trend-area-normal:  var(--trand-normal);
-   --trend-area-negative:  var(--trand-negative);
-   --trend-area-insignificant:  var(--trand-insignificant);
+	--trend-area-positive: var(--trand-positive);
+	--trend-area-normal: var(--trand-normal);
+	--trend-area-negative: var(--trand-negative);
+	--trend-area-insignificant: var(--trand-insignificant);
 }
 :root.facelift p {
 	color: var(--symbols-primary);
@@ -285,12 +285,12 @@
 /* It's just easier tp have it uniformed */
 .micro-anchor,
 .micro-primary {
-   font-style: normal;
-   font-weight: 600;
-   font-size: 10px;
-   line-height: 12px;
-   padding: 8px;
-   margin: 0;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 12px;
+	padding: 8px;
+	margin: 0;
 }
 
 .highlight-anchor {

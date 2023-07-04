@@ -29,9 +29,6 @@ const props = defineProps({
 		}
 	}
 })
-
-
-
 </script>
 
 <template>
@@ -120,9 +117,6 @@ const props = defineProps({
 			background-color: var(--trend-insignificant);
 		}
 	}
-
-	
-
 
 	&.clickable:not(.disabled) {
 		cursor: pointer;

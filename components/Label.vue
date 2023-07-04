@@ -9,7 +9,7 @@ const props = defineProps({
 			)
 		}
 	},
-    trend: {
+	trend: {
 		type: String,
 		default: 'none',
 		validator(value) {
@@ -21,7 +21,7 @@ const props = defineProps({
 				'none'
 			].includes(value)
 		}
-	},
+	}
 })
 </script>
 
@@ -42,26 +42,25 @@ const props = defineProps({
 .label {
 	color: var(--symbols-primary);
 	display: inline-block;
-    vertical-align: baseline;
+	vertical-align: baseline;
 	padding: 8px 0 8px 0px;
 
 	display: inline-flex;
 	gap: 4px;
 	align-items: middle;
 
-
-    &.trend-insignificant {
-        color: var(--trend-insignificant);
-    }
-    &.trend-normal {
-        color: var(--trend-normal);
-    }
-    &.trend-positive {
-        color: var(--trend-positive);
-    }
-    &.trend-negative {
-        color: var(--trend-negative);
-    }
+	&.trend-insignificant {
+		color: var(--trend-insignificant);
+	}
+	&.trend-normal {
+		color: var(--trend-normal);
+	}
+	&.trend-positive {
+		color: var(--trend-positive);
+	}
+	&.trend-negative {
+		color: var(--trend-negative);
+	}
 }
 
 .secondary {

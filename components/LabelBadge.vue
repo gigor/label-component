@@ -30,7 +30,7 @@ const formatedValue = computed(() => (props.value > 99 ? '99+' : props.value))
 <style scoped>
 .label-badge {
 	position: absolute;
-    z-index: 2;
+	z-index: 2;
 	background-color: var(--info-informing);
 	color: var(--white);
 
@@ -46,5 +46,4 @@ const formatedValue = computed(() => (props.value > 99 ? '99+' : props.value))
 	right: 0px;
 	transform: translate(50%, -50%);
 }
-/* TODO: all other positions */
 </style>
