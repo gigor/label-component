@@ -1,6 +1,6 @@
 # Pill component made as a test task for someone.
 
-(Live demo)[]
+[Live demo](https://github.com/gigor/label-component)
 
 ```
 npm i
